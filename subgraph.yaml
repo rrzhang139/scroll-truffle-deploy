@@ -8,7 +8,7 @@ dataSources:
     name: Gravity
     network: mainnet:https://prealpha.scroll.io/l2
     source:
-      address: '0xCc2601bBe4e73D91EFb0A050bE6fDcBAc28c03E8'
+      address: '0xd9171f3c95882844461D471FaceD66F117d0644F'
       abi: Gravity
     mapping:
       kind: ethereum/events

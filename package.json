@@ -1,16 +1,16 @@
 {
   "name": "example",
   "version": "0.1.0",
-  "repository": "https://github.com/graphprotocol/example-subgraph",
+  "repository": "https://github.com/rrzhang139/example-subgraph",
   "license": "MIT",
   "scripts": {
     "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
     "create": "graph create example --node https://api.thegraph.com/deploy/",
-    "create-local": "graph create gravity-scroll --node http://35.162.35.29:8020",
+    "create-local": "graph create gravity-contract --node http://35.162.35.29:8020",
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy": "graph deploy example --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy gravity-scroll --ipfs https://api.thegraph.com/ipfs/ --node http://35.162.35.29:8020 ./subgraph.yaml"
+    "deploy-local": "graph deploy example --ipfs https://api.thegraph.com/ipfs/ --node http://35.162.35.29:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.30.2",

@@ -5,12 +5,12 @@ const HDWalletProvider = require('truffle-hdwallet-provider')
 module.exports = {
   networks: {
     development: {
-      host: '127.0.0.1',
-      port: 8545,
+      host: 'https://prealpha.scroll.io/l2',
       network_id: '*',
+      from: "0x751146151EB6eAa2F723fc11060C0A8e5fEA3976"
     },
     ropsten: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           process.env.MNEMONIC,
           `https://ropsten.infura.io/v3/${process.env.ROPSTEN_INFURA_API_KEY}`
