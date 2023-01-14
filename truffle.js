@@ -1,13 +1,11 @@
-require('babel-register')
-require('babel-polyfill')
-const HDWalletProvider = require('truffle-hdwallet-provider')
+const HDWalletProvider = require("@truffle/hdwallet-provider")
 
 module.exports = {
   networks: {
     development: {
-      host: 'https://prealpha.scroll.io/l2',
-      network_id: '*',
-      from: "0x751146151EB6eAa2F723fc11060C0A8e5fEA3976"
+      provider: () =>
+        new HDWalletProvider("INSERT_PRIVATE_KEY", "https://prealpha.scroll.io/l2"),
+      network_id: '534354',
     },
     ropsten: {
       provider: function () {
